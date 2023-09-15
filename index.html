@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mundo</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/6554/6554183.png">
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="bannerVideo" id="slideShow">
+        <video
+          src="./img/video1.mp4"
+          autoplay
+          muted
+          loop class="active"
+          
+        ></video>
+        <video src="./img/video2.mp4" autoplay muted loop ></video>
+        <video src="./img/video3.mp4" autoplay muted loop></video>
+        <video src="./img/video4.mp4" autoplay muted loop></video>
+      </div>
+      <div class="container">
+        <header id="navbar">
+          <a href="#" class="logo">Mundo</a>
+          <ul>
+            <li><a href="#" class="active">Inicio</a></li>
+            <li><a href="#">Destino</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+          <span class="menuIcon" onclick="toggleMenu()"></span>
+        </header>
+        <div class="content">
+          <div class="bannerText" id="slideShowText">
+            <div class="active">
+              <h2>Argentina</h2>
+              <p>
+                Argentina es un país sudamericano conocido por su diversidad geográfica y cultural, 
+                lo que lo convierte en un destino turístico fascinante. Desde las majestuosas cataratas del 
+                Iguazú en el norte hasta la mágica Tierra del Fuego en el extremo sur, Argentina ofrece una amplia gama 
+                de experiencias para los viajeros.
+              </p>
+            </div>
+            <div>
+              <h2>Hong Kong</h2>
+              <p>
+                Hong Kong es una vibrante metrópolis ubicada en la costa sur de China, conocida por su singular fusión de 
+                culturas orientales y occidentales. Como destino turístico, Hong Kong ofrece una experiencia única. Aquí, 
+                los rascacielos de cristal se alzan junto a antiguos templos budistas, y los mercados callejeros tradicionales coexisten 
+                con lujosos centros comerciales.
+              </p>
+            </div>
+            <div>
+              <h2>España</h2>
+              <p>
+                España es un destino turístico diverso y cautivador que ofrece una combinación única de historia, cultura, belleza 
+                natural y vida animada. Situada en el suroeste de Europa, esta nación ibérica es famosa por su rica herencia artística, 
+                su deliciosa gastronomía y su clima agradable.
+              </p>
+            </div>
+            <div>
+              <h2>Dubai</h2>
+              <p>
+                Dubái, en los Emiratos Árabes Unidos, es un destino turístico futurista conocido por su arquitectura audaz y lujo extremo. 
+                Dominado por rascacielos icónicos, playas de arena blanca y experiencias de compras de alta gama, ofrece una combinación única 
+                de modernidad y tradición árabe. Es un lugar donde el glamour y la extravagancia son la norma, lo que lo convierte en un destino 
+                turístico fascinante.
+              </p>
+            </div>
+          </div>
+        </div>
+        <ul class="controls">
+          <li onclick="prevSlide();prevSlideText();"><img src="./img/left.png" /></li>
+          <li onclick="nextSlide();nextSlideText();"><img src="./img/right.png" /></li>
+        </ul>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
